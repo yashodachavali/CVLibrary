@@ -12,7 +12,7 @@ Test framework is built by using Cucumber Typescript Playwright libraries.
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/`
+1. Clone the repository: `git clone https://github.com/yashodachavali/CVLibrary.git`
 2. Navigate to the project directory: `cd CVlibrary test automation`
 3. Install VS Code/ any code editor as IDE `https://code.visualstudio.com/download`
 4. Install cucumber full support extension 

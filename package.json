@@ -1,0 +1,35 @@
+{
+  "name": "cvlibrary-test-automation",
+  "version": "1.0.0",
+  "description": "This is a CV-library demo project",
+  "main": "index.js",
+  "scripts": {
+    "report": "start testresults/reports.html",
+    "build": "tsc&&rimraf src && rimraf config&& rimraf testresults",
+    "precucumber": "rimraf testresults && mkdir testresults &&  echo {} > testresults/report.json ",
+    "test": "npm run precucumber && cucumber-js --tags=\"not @ignore\" --retry=2 || npm run postcucumber",
+    "postcucumber": "ts-node ./src/reporter/cucumber-reports.ts",
+    "test:dryrun": "cucumber-js --dry-run"
+  },
+  "keywords": [
+    "automation",
+    "cucumber",
+    "playwright",
+    "typescript"
+  ],
+  "author": "Yashoda",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.4.0",
+    "@playwright/test": "^1.18.1",
+    "@types/node": "^17.0.5",
+    "cucumber-html-reporter": "^5.5.0",
+    "dotenv": "16.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "rimraf": "3.0.2",
+    "winston": "3.6.0"
+  }
+}

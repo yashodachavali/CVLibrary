@@ -1,0 +1,31 @@
+{
+  "ts-node": {
+       "transpileOnly": true
+      },
+  "compilerOptions": {
+    "target": "es6",                                     
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",                                                            
+    "resolveJsonModule": true,
+    "declaration": false, 
+    "sourceMap": false,
+    "removeComments": false, 
+    "inlineSourceMap": true,  
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,     
+    "skipLibCheck": true,                                                                                                                                                                                 
+    "checkJs":true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": false,
+    "declarationMap": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    },
+ "include": ["src"],
+
+  "exclude": ["node_modules"]
+}
+
